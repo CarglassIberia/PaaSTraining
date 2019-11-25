@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  coffeeBuyers:
+    container_name: coffeebuyers
+    image: ${PRIVATE_REGISTRY}/coffeebuyers
+    env_file:
+     - .env
+    ports:
+      - "5000:80"
+      - "5001:443"
+    build:
+      context: ./App/BuyCoffee
+      dockerfile: BuyCoffee/Dockerfile    
+    networks:
+      - front-tier
+      - back-tier
+    depends_on:
+      - sql
+
+  sql:
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=P@ssw0rd!
+    networks:
+    - front-tier
+    - back-tier
+networks:
+  front-tier:
+  back-tier:
