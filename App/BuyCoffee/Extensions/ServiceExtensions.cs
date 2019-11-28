@@ -18,10 +18,9 @@ namespace BuyCoffee.Extensions
         public static IServiceCollection AddDatabase(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<CoffeeBuyersContext>(
-                options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnectionString")));
+               options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnectionString")));
+               //options => options.UseInMemoryDatabase("lol"));
             return services;
-
-
 
         }
 

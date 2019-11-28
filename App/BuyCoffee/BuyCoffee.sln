@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuyCoffee", "BuyCoffee\BuyCoffee.csproj", "{6BE9E404-0731-4136-ADC8-4E77A2F03A3C}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D6C5D8D5-8940-42C6-9D0C-004FA8B93525}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuyCoffee", "BuyCoffee.csproj", "{A6162099-2354-42A3-B8AC-DE4390038A2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6BE9E404-0731-4136-ADC8-4E77A2F03A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6BE9E404-0731-4136-ADC8-4E77A2F03A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6BE9E404-0731-4136-ADC8-4E77A2F03A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6BE9E404-0731-4136-ADC8-4E77A2F03A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C5D8D5-8940-42C6-9D0C-004FA8B93525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C5D8D5-8940-42C6-9D0C-004FA8B93525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C5D8D5-8940-42C6-9D0C-004FA8B93525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C5D8D5-8940-42C6-9D0C-004FA8B93525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6162099-2354-42A3-B8AC-DE4390038A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6162099-2354-42A3-B8AC-DE4390038A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6162099-2354-42A3-B8AC-DE4390038A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6162099-2354-42A3-B8AC-DE4390038A2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

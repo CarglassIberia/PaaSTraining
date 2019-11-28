@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  buycoffee:
+    image: ${DOCKER_REGISTRY-}buycoffee
+    ports:
+      - "5000:80"
+    build:
+      context: .
+      dockerfile: BuyCoffee/Dockerfile
+    environment:
+      - ConnectionStrings__DefaultConnectionString=Server=sql,1433;Database=cofeebuyers;User Id=sa;Password=C@bez0n!;MultipleActiveResultSets=true
+    networks:
+      - front-tier
+    depends_on:
+      - sql
+      - logstash
+
+  sql:
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=C@bez0n!
+    networks:
+      - front-tier
+

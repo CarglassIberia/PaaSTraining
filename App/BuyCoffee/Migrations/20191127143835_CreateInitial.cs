@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BuyCoffee.Migrations
 {
-    public partial class Initial : Migration
+    public partial class CreateInitial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
