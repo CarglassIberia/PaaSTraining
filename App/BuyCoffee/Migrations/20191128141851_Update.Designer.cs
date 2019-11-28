@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BuyCoffee.Migrations
 {
     [DbContext(typeof(CoffeeBuyersContext))]
-    [Migration("20191127143835_CreateInitial")]
-    partial class CreateInitial
+    [Migration("20191128141851_Update")]
+    partial class Update
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vulnerabilityAssessments_Default_storageContainerPath": {
+            "value": null
+        },
+        "sites_florolos_api_name": {
+            "value": null
+        },
+        "servers_florolosdbserver_name": {
+            "value": null
+        },
+        "components_florolos_api_name": {
+            "value": null
+        },
+        "serverfarms_florolosHostingPlan_externalid": {
+            "value": null
+        }
+    }
+}
